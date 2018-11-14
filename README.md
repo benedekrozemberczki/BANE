@@ -59,9 +59,9 @@ Learning of the embedding is handled by the `src/main.py` script which provides 
 #### Input and output options
 
 ```
-  --edge-path    STR        Input graph path.           Default is `input/chameleon_edges.csv`.
-  --feature-path STR        Input Features path.        Default is `input/chameleon_features.json`.
-  --output-path  STR        Embedding path.             Default is `output/chameleon_fscnmf.csv`.
+  --edge-path    STR        Input graph path.           Default is `input/ptbr_edges.csv`.
+  --feature-path STR        Input Features path.        Default is `input/ptbr_features.json`.
+  --output-path  STR        Embedding path.             Default is `output/ptbr_bane.csv`.
 ```
 
 #### Model options
@@ -85,18 +85,18 @@ Learning of the embedding is handled by the `src/main.py` script which provides 
 
 The following commands learn a graph embedding and write the embedding to disk. The node representations are ordered by the ID.
 
-Creating aN FSCNMF embedding of the default dataset with the default hyperparameter settings. Saving the embedding at the default path.
+Creating a BANE embedding of the default dataset with the default hyperparameter settings. Saving the embedding at the default path.
 
 ```
 python src/main.py
 ```
-Creating an FSCNMF embedding of the default dataset with 128 dimensions and approximation order 1.
+Creating a BANE embedding of the default dataset with 128 dimensions and approximation order 1.
 
 ```
 python src/main.py --dimensions 128 --order 1
 ```
 
-Creating an FSCNMF embedding of the default dataset with asymmetric mixing.
+Creating a BANE embedding of the default dataset with asymmetric mixing.
 
 ```
 python src/main.py --gamma 0.1
@@ -105,5 +105,5 @@ python src/main.py --gamma 0.1
 Creating an embedding of an other dense structured dataset the `Wikipedia Giraffes`. Saving the output in a custom folder.
 
 ```
-python src/main.py --edge-path input/giraffe_edges.csv --feature-path input/giraffe_features.csv --output-path output/giraffe_fscnmf.csv --features dense
+python src/main.py --edge-path input/giraffe_edges.csv --feature-path input/giraffe_features.csv --output-path output/giraffe_bane.csv --features dense
 ```
