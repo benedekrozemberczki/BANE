@@ -60,26 +60,21 @@ Learning of the embedding is handled by the `src/main.py` script which provides 
 #### Input and output options
 
 ```
-  --edge-path    STR        Input graph path.           Default is `input/ptbr_edges.csv`.
-  --feature-path STR        Input Features path.        Default is `input/ptbr_features.json`.
-  --output-path  STR        Embedding path.             Default is `output/ptbr_bane.csv`.
+  --edge-path    STR     Input graph path.           Default is `input/ptbr_edges.csv`.
+  --feature-path STR     Input Features path.        Default is `input/ptbr_features.json`.
+  --output-path  STR     Embedding path.             Default is `output/ptbr_bane.csv`.
 ```
 
 #### Model options
 
 ```
-  --features       STR         Structure of the feature matrix.                   Default is `sparse`. 
-  --dimensions     INT         Number of embeding dimensions.                     Default is 32.
-  --order          INT         Order of adjacency matrix powers.                  Default is 3.
-  --iterations     INT         Number of power interations.                       Default is 500.
-  --alpha_1        FLOAT       Alignment parameter for adjacency matrix.          Default is 1000.0.
-  --alpha_2        FLOAT       Adjacency basis regularization.                    Default is 1.0.
-  --alpha_3        FLOAT       Adjacency features regularization.                 Default is 1.0.
-  --beta_1         FLOAT       Alignment parameter for feature matrix.            Default is 1000.0.
-  --beta_2         FLOAT       Attribute basis regularization .                   Default is 1.0.
-  --beta_3         FLOAT       Attribute feature regularization.                  Default is 1.0.
-  --gamma          FLOAT       Embedding mixing parameter.                        Default is 0.5.  
-  --lower-control  FLOAT       Overflow control parameter.                        Default is 10**-15.  
+  --features               STR         Structure of the feature matrix.       Default is `sparse`. 
+  --dimensions             INT         Number of embeding dimensions.         Default is 48.
+  --order                  INT         Order of adjacency matrix powers.      Default is 1.
+  --binarization-rounds    INT         Number of power interations.           Default is 10.
+  --approximation-rounds   INT         Number of CDC interations.             Default is 5.
+  --alpha                  FLOAT       Regularization parameter.              Default is 0.7.
+  --gamma                  FLOAT       Weisfeiler-Lehman mixing parameter.    Default is 0.1.  
 ```
 
 ### Examples
