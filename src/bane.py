@@ -8,7 +8,6 @@ from sklearn.decomposition import TruncatedSVD
 class BANE(object):
     """
     Binarized Attributed Network Embedding Class (ICDM 2018).
-    
     """
     def __init__(self, args, P, X):
         """
