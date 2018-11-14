@@ -6,6 +6,7 @@ An implementation of "Binarized Attributed Network Embedding". Attributed networ
 <div style="text-align:center"><img src ="bane.jpeg" ,width=720/></div>
 
 This repository provides an implementation for FSCNMF as described in the paper:
+
 > Binarized Attributed Network Embedding
 > YHong Yang, Shirui Pan, Peng Zhang, Ling Chen, Defu Lian, and Chengqi Zhang
 > ICDM, 2018.
