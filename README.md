@@ -6,10 +6,10 @@ An implementation of "Binarized Attributed Network Embedding". Attributed networ
 <div style="text-align:center"><img src ="bane.jpeg" ,width=720/></div>
 
 This repository provides an implementation for FSCNMF as described in the paper:
-> FSCNMF: Fusing Structure and Content via Non-negative Matrix Factorization for Embedding Information Networks.
-> Sambaran Bandyopadhyay, Harsh Kara, Aswin Kannan and M N Murty
-> arXiv, 2018.
->https://arxiv.org/pdf/1804.05313.pdf
+> Binarized Attributed Network Embedding
+> YHong Yang, Shirui Pan, Peng Zhang, Ling Chen, Defu Lian, and Chengqi Zhang
+> ICDM, 2018.
+> [[Paper]](https://www.researchgate.net/publication/328688614_Binarized_Attributed_Network_Embedding)
 
 
 ### Requirements
@@ -23,6 +23,7 @@ pandas            0.23.4
 texttable         1.5.0
 scipy             1.1.0
 argparse          1.1.0
+sklearn           0.20.0
 ```
 ### Datasets
 
