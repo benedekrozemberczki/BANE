@@ -8,7 +8,7 @@ def parameter_parser():
     Representations are sorted by node ID.
     """
 
-    parser = argparse.ArgumentParser(description = "Run FSCNMF.")
+    parser = argparse.ArgumentParser(description = "Run BANE.")
 
 
     parser.add_argument('--edge-path',
@@ -34,22 +34,22 @@ def parameter_parser():
     parser.add_argument('--dimensions',
                         type = int,
                         default = 48,
-	                help = 'Number of SVD factors. Default is 200.')
+	                help = 'Number of SVD factors. Default is 48.')
 
     parser.add_argument('--binarization-rounds',
                         type = int,
                         default = 10,
-	                help = 'Number of SVD factors. Default is 10.')
+	                help = 'Number of power iterations. Default is 10.')
 
     parser.add_argument('--approximation-rounds',
                         type = int,
                         default = 5,
-	                help = 'Number of SVD factors. Default is 5.')
+	                help = 'Number of CDC rounds. Default is 5.')
 
     parser.add_argument('--order',
                         type = int,
                         default = 1,
-	                help = 'Adjacency matrix power. Default is 1.')
+	                help = 'Adjacency matrix power in target creation. Default is 1.')
 
     parser.add_argument('--gamma',
                         type = float,
