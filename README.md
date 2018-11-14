@@ -3,7 +3,7 @@ BANE
 <p align="justify">
 An implementation of "Binarized Attributed Network Embedding". Attributed network embedding enables joint representation learning of node links and attributes. Existing attributed network embedding models are designed in continuous Euclidean spaces which often introduce data redundancy and impose challenges to storage and computation costs. To this end, we present a Binarized Attributed Network Embedding model (BANE for short) to learn binary node representation. Specifically, we define a new Weisfeiler-Lehman proximity matrix to capture data dependence between node links and attributes by aggregating the information of node attributes and links from neighboring nodes to a given target node in a layer-wise manner. Based on the Weisfeiler-Lehman proximity matrix, we formulate a new Weisfiler-Lehman matrix factorization learning function under the binary node representation constraint. The learning problem is a mixed integer optimization and an efficient cyclic coordinate descent (CCD) algorithm is used as the solution. Node classification and link prediction experiments on real-world datasets show that the proposed BANE model outperforms the state-of-the-art network embedding methods.
 </p>
-<div style="text-align:center"><img src ="bane.jpg" ,width=720/></div>
+<div style="text-align:center"><img src ="bane.jpeg" ,width=720/></div>
 
 This repository provides an implementation for FSCNMF as described in the paper:
 > FSCNMF: Fusing Structure and Content via Non-negative Matrix Factorization for Embedding Information Networks.
