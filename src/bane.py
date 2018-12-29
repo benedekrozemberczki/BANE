@@ -63,7 +63,7 @@ class BANE(object):
         """
         Updating the embedding matrix.
         """
-        for i in tqdm(range(self.args.approximation_rounds), desc='Inner approximation:'):
+        for i in tqdm(range(self.args.approximation_rounds), desc="Inner approximation:"):
             for dimension in range(self.args.dimensions):
                 selector = [x for x in range(self.args.dimensions) if x != dimension]
                 self.B[:,dimension] = np.sign(self.Q[:,dimension]-self.B[:,selector].dot(self.G[selector,:]).dot(self.G[:,dimension]).transpose())
@@ -75,7 +75,7 @@ class BANE(object):
 
         self.B = np.sign(np.random.normal(size=(self.P.shape[0], self.args.dimensions)))
 
-        for iteration in tqdm(range(self.args.binarization_rounds), desc='Power iteration', leave=True):
+        for iteration in tqdm(range(self.args.binarization_rounds), desc="Power iteration", leave=True):
             self.update_G()
             self.update_Q()
             self.update_B()
