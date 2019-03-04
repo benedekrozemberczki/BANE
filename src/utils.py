@@ -12,12 +12,14 @@ def normalize_adjacency(graph, args):
     :param graph: Sparse graph adjacency matrix.
     :return A: Normalized adjacency matrix.
     """
+    for node in graph.nodes():
+        graph.add_edge(node, node) 
     ind = range(len(graph.nodes()))
     degs = [1.0/graph.degree(node) for node in graph.nodes()]
     L = sparse.csr_matrix(nx.laplacian_matrix(graph),dtype=np.float32)
     degs = sparse.csr_matrix(sparse.coo_matrix((degs,(ind,ind)),shape=L.shape,dtype=np.float32))
-    args = sparse.eye(L.shape[0])-args.gamma*degs.dot(L)
-    return L
+    propagator = sparse.eye(L.shape[0])-args.gamma*degs.dot(L)
+    return propagator
 
 def read_graph(args):
     """
