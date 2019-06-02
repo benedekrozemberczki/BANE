@@ -13,6 +13,7 @@ This repository provides an implementation for BANE as described in the paper:
 > ICDM, 2018.
 > [[Paper]](https://www.researchgate.net/publication/328688614_Binarized_Attributed_Network_Embedding)
 
+The reference dense MatLab implementation is available [[here]](https://github.com/ICDM2018-BANE/BANE).
 
 ### Requirements
 
