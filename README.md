@@ -1,6 +1,8 @@
 BANE [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/binarized-attributed-network-embedding/link-prediction-on-cora)](https://paperswithcode.com/sota/link-prediction-on-cora?p=binarized-attributed-network-embedding) 	<img src="https://img.shields.io/badge/stars-10+-blue.svg"/>
 	<img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
 ============================================
+### Abstract
+
 <p align="justify">
 An implementation of "Binarized Attributed Network Embedding". Attributed network embedding enables joint representation learning of node links and attributes. Existing attributed network embedding models are designed in continuous Euclidean spaces which often introduce data redundancy and impose challenges to storage and computation costs. To this end, we present a Binarized Attributed Network Embedding model (BANE for short) to learn binary node representation. Specifically, we define a new Weisfeiler-Lehman proximity matrix to capture data dependence between node links and attributes by aggregating the information of node attributes and links from neighboring nodes to a given target node in a layer-wise manner. Based on the Weisfeiler-Lehman proximity matrix, we formulate a new Weisfiler-Lehman matrix factorization learning function under the binary node representation constraint. The learning problem is a mixed integer optimization and an efficient cyclic coordinate descent (CCD) algorithm is used as the solution. Node classification and link prediction experiments on real-world datasets show that the proposed BANE model outperforms the state-of-the-art network embedding methods.
 </p>
