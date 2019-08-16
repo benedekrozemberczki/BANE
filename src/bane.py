@@ -40,7 +40,6 @@ class BANE(object):
         self.model.fit(self.P)
         self.P = self.model.fit_transform(self.P)
 
-
     def update_G(self):
         """
         Updating the kernel matrix.
