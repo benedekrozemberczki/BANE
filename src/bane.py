@@ -31,7 +31,6 @@ class BANE(object):
         print("SVD completed.\nFitting binary model.\n")
         self.binary_optimize()
 
-
     def fit_base_SVD_model(self):
         """
         Reducing the dimensionality with SVD in the 1st step.
