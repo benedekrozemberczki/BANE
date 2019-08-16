@@ -66,9 +66,7 @@ class BANE(object):
         """
         Starting 2nd optimization phase with power iterations and CDC.
         """
-
         self.B = np.sign(np.random.normal(size=(self.P.shape[0], self.args.dimensions)))
-
         for iteration in tqdm(range(self.args.binarization_rounds), desc="Power iteration", leave=True):
             self.update_G()
             self.update_Q()
