@@ -26,13 +26,9 @@ class BANE(object):
         1. Running SVD.
         2. Running power iterations and CDC.
         """
-
         print("\nFitting BANE model.\nBase SVD fitting started.")
-        
         self.fit_base_SVD_model()
-
         print("SVD completed.\nFitting binary model.\n")
-
         self.binary_optimize()
 
 
