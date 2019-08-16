@@ -43,9 +43,8 @@ class BANE(object):
 
     def update_G(self):
         """
-        Uopdating the kernel matrix.
+        Updating the kernel matrix.
         """
-
         self.G = inv(np.dot(self.B.transpose(), self.B)+self.args.alpha*np.eye(self.args.dimensions)).dot(self.B.transpose()).dot(self.P)
 
     def update_Q(self):
