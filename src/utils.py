@@ -64,10 +64,8 @@ def read_sparse_features(feature_path):
     index_1 = [int(k) for k,v in features.items() for fet in v]
     index_2 = [int(fet) for k,v in features.items() for fet in v]
     values = [1.0]*len(index_1) 
-
     nodes = [int(k) for k,v in features.items()]
     node_count = max(nodes)+1
-
     feature_count = max(index_2)+1
     features = sparse.csr_matrix(sparse.coo_matrix((values,(index_1,index_2)),shape=(node_count,feature_count),dtype=np.float32))
     return features
