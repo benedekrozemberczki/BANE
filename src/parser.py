@@ -8,7 +8,6 @@ def parameter_parser():
     """
     parser = argparse.ArgumentParser(description = "Run BANE.")
 
-
     parser.add_argument("--edge-path",
                         nargs = "?",
                         default = "./input/ptbr_edges.csv",
