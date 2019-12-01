@@ -30,12 +30,12 @@ argparse          1.1.0
 sklearn           0.20.0
 ```
 ### Datasets
-
-The code takes an input graph in a csv file. Every row indicates an edge between two nodes separated by a comma. The first row is a header. Nodes should be indexed starting with 0. Sample graphs for the `Twitch Brasilians` ,`Wikipedia Chameleons` and `Wikipedia Giraffes` are included in the  `input/` directory. 
+<p align="justify">
+The code takes an input graph in a csv file. Every row indicates an edge between two nodes separated by a comma. The first row is a header. Nodes should be indexed starting with 0. Sample graphs for the `Twitch Brasilians` ,`Wikipedia Chameleons` and `Wikipedia Giraffes` are included in the  `input/` directory. </p>
 
 The feature matrix can be stored two ways:
-
-If the feature matrix is a **sparse binary** one it is stored as a json. Nodes are keys of the json and features are the values. For each node feature column ids are stored as elements of a list. The feature matrix is structured as:
+<p align="justify">
+If the feature matrix is a **sparse binary** one it is stored as a json. Nodes are keys of the json and features are the values. For each node feature column ids are stored as elements of a list. The feature matrix is structured as:</p>
 
 ```javascript
 { 0: [0, 1, 38, 1968, 2000, 52727],
@@ -44,7 +44,8 @@ If the feature matrix is a **sparse binary** one it is stored as a json. Nodes a
   ...
   n: [2018, 10000]}
 ```
-If the feature matrix is **dense** it is assumed that it is stored as csv with comma separators. It has a header, the first column contains node identifiers and it is sorted by these identifers. It should look like this:
+<p align="justify">
+If the feature matrix is **dense** it is assumed that it is stored as csv with comma separators. It has a header, the first column contains node identifiers and it is sorted by these identifers. It should look like this:</p>
 
 | **NODE ID**| **Feature 1** | **Feature 2** | **Feature 3** | **Feature 4** |
 | --- | --- | --- | --- |--- |
@@ -57,8 +58,8 @@ If the feature matrix is **dense** it is assumed that it is stored as csv with c
 
 
 ### Options
-
-Learning of the embedding is handled by the `src/main.py` script which provides the following command line arguments.
+<p align="justify">
+Learning of the embedding is handled by the `src/main.py` script which provides the following command line arguments.</p>
 
 #### Input and output options
 
@@ -81,10 +82,10 @@ Learning of the embedding is handled by the `src/main.py` script which provides 
 ```
 
 ### Examples
-
-The following commands learn a graph embedding and write the embedding to disk. The node representations are ordered by the ID.
-
-Creating a BANE embedding of the default dataset with the default hyperparameter settings. Saving the embedding at the default path.
+<p align="justify">
+The following commands learn a graph embedding and write the embedding to disk. The node representations are ordered by the ID.</p>
+<p align="justify">
+Creating a BANE embedding of the default dataset with the default hyperparameter settings. Saving the embedding at the default path.</p>
 
 ```
 python src/main.py
