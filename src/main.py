@@ -1,5 +1,7 @@
+"""Running the BANE method."""
+
 from bane import BANE
-from parser import parameter_parser
+from param_parser import parameter_parser
 from utils import read_graph, read_features, tab_printer
 
 def main():
