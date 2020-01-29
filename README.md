@@ -7,6 +7,8 @@ An implementation of "Binarized Attributed Network Embedding". Attributed networ
 </p>
 <div style="text-align:center"><img src ="bane.jpeg" ,width=720/></div>
 
+The model is now also available in the package [Karate Club](https://github.com/benedekrozemberczki/karateclub).
+
 This repository provides an implementation for BANE as described in the paper:
 
 > Binarized Attributed Network Embedding.
