@@ -89,23 +89,23 @@ The following commands learn a graph embedding and write the embedding to disk. 
 <p align="justify">
 Creating a BANE embedding of the default dataset with the default hyperparameter settings. Saving the embedding at the default path.</p>
 
-```
-python src/main.py
+```sh
+$ python src/main.py
 ```
 Creating a BANE embedding of the default dataset with 128 dimensions and approximation order 1.
 
-```
-python src/main.py --dimensions 128 --order 1
+```sh
+$ python src/main.py --dimensions 128 --order 1
 ```
 
 Creating a BANE embedding of the default dataset with asymmetric mixing.
 
-```
-python src/main.py --gamma 0.1
+```sh
+$ python src/main.py --gamma 0.1
 ```
 
 Creating an embedding of an other dense structured dataset the `Wikipedia Giraffes`. Saving the output in a custom folder.
 
-```
-python src/main.py --edge-path input/giraffe_edges.csv --feature-path input/giraffe_features.csv --output-path output/giraffe_bane.csv --features dense
+```sh
+$ python src/main.py --edge-path input/giraffe_edges.csv --feature-path input/giraffe_features.csv --output-path output/giraffe_bane.csv --features dense
 ```
