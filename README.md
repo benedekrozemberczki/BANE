@@ -1,4 +1,4 @@
-BANE [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/binarized-attributed-network-embedding/link-prediction-on-cora)](https://paperswithcode.com/sota/link-prediction-on-cora?p=binarized-attributed-network-embedding) ![GitHub stars](https://img.shields.io/github/stars/benedekrozemberczki/BANE.svg?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/benedekrozemberczki/BANE.svg?color=blue&style=plastic) ![License](https://img.shields.io/github/license/benedekrozemberczki/BANE.svg?color=blue&style=plastic)
+BANE [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/binarized-attributed-network-embedding/link-prediction-on-cora)](https://paperswithcode.com/sota/link-prediction-on-cora?p=binarized-attributed-network-embedding) ![License](https://img.shields.io/github/license/benedekrozemberczki/BANE.svg?color=blue&style=plastic)
 ============================================
 ### Abstract
 
