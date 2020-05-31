@@ -1,4 +1,4 @@
-BANE [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/binarized-attributed-network-embedding/link-prediction-on-cora)](https://paperswithcode.com/sota/link-prediction-on-cora?p=binarized-attributed-network-embedding) ![License](https://img.shields.io/github/license/benedekrozemberczki/BANE.svg?color=blue&style=plastic)
+BANE [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/binarized-attributed-network-embedding/link-prediction-on-cora)](https://paperswithcode.com/sota/link-prediction-on-cora?p=binarized-attributed-network-embedding) ![License](https://img.shields.io/github/license/benedekrozemberczki/BANE.svg?color=blue&style=plastic) [![codebeat badge](https://codebeat.co/badges/3728636b-e766-429e-a453-4c4349e56d57)](https://codebeat.co/projects/github-com-benedekrozemberczki-bane-master)
 ============================================
 ### Abstract
 
