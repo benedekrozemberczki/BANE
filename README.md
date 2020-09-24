@@ -11,7 +11,7 @@ The model is now also available in the package [Karate Club](https://github.com/
 
 This repository provides an implementation for BANE as described in the paper:
 
-> Binarized Attributed Network Embedding.
+> **Binarized Attributed Network Embedding**
 > YHong Yang, Shirui Pan, Peng Zhang, Ling Chen, Defu Lian, and Chengqi Zhang.
 > ICDM, 2018.
 > [[Paper]](https://www.researchgate.net/publication/328688614_Binarized_Attributed_Network_Embedding)
