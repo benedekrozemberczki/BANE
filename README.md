@@ -1,5 +1,5 @@
 BANE 
-============================================
+=====
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/binarized-attributed-network-embedding/link-prediction-on-cora)](https://paperswithcode.com/sota/link-prediction-on-cora?p=binarized-attributed-network-embedding) [![codebeat badge](https://codebeat.co/badges/3728636b-e766-429e-a453-4c4349e56d57)](https://codebeat.co/projects/github-com-benedekrozemberczki-bane-master) [![repo size](https://img.shields.io/github/repo-size/benedekrozemberczki/BANE.svg)](https://github.com/benedekrozemberczki/BANE/archive/master.zip)⠀[![benedekrozemberczki](https://img.shields.io/twitter/follow/benrozemberczki?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=benrozemberczki)⠀
 
 <p align="justify">
