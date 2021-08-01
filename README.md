@@ -9,6 +9,8 @@ An implementation of "Binarized Attributed Network Embedding". Attributed networ
 
 The model is now also available in the package [Karate Club](https://github.com/benedekrozemberczki/karateclub).
 
+--------------------------------------------------------------------------------
+
 This repository provides an implementation for **BANE** as described in the paper:
 
 > **Binarized Attributed Network Embedding**
